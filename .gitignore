@@ -4,3 +4,7 @@
 bin/
 logs/
 *.exe
+.lh
+
+# include
+!nats-server.exe
