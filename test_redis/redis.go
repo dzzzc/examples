@@ -4,16 +4,17 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"time"
+
 	cherryLogger "github.com/cherry-game/cherry/logger"
 	"github.com/go-redis/redis/v8"
-	"time"
 )
 
 func main() {
 	rdb := redis.NewClient(&redis.Options{
-		Addr:     "127.0.0.1:6379",
-		Password: "", // no password set
-		DB:       0,  // use default DB
+		Addr:     "192.168.100.101:6379",
+		Password: "123456", // no password set
+		DB:       0,        // use default DB
 	})
 
 	ctx := context.Background()
