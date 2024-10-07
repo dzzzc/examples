@@ -79,5 +79,17 @@
                 "--node=10001"
             ]
         }
+    ],
+    "compounds": [
+        {
+            "name": "launch cherry cluster",
+            "configurations": [
+                "gc-master",
+                "gc-center",
+                "gc-gate-1",
+                "gc-web-1",
+                "gc-game-10001"
+            ]
+        }
     ]
 }
